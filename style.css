@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.half-width{
+    margin-left: 5%;
+    padding-left: 2%;
+    width: 40%;
+    float: left;
+}
+.half-width img{
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+}
+.highLight{
+    color: cadetblue;
+    font-weight: 900;
+}
+p{
+    font-weight: 900;
+}
+.button{
+    background-image: linear-gradient(120deg, cyan, blue);
+    padding: 10px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.button:hover{
+    background-image: linear-gradient(120deg, white, white);
+    padding: 10px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: blue;
+    border: 3px solid;
+    border-image:linear-gradient(120deg, cyan, blue);
+    border-image-slice: 1;
+    border-radius: 20px;
+}
+.space{
+    height: 100px;
+}
+/* third Section */
+.thirdSectionTittle{
+    text-align: center;
+    font-size: 40px;
+}
+.work{
+    margin-left: 5%;
+    width: 25%;
+}
+.work:hover{
+    box-shadow: 20px 30px 40px gray;
+}
+/* finalSection */
+.clientName, .clientTittle{
+    text-align: center;
+}
+.clientTittle{
+    font-size: 15px;
+}
+.review{
+    text-align: center;
+
+}
+.mail{
+    text-align: center;
+    background-color: rgb(207, 39, 67);
+    color: white;
+    margin: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 5px;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    text-align: center;
+    font-size: 17px;
+}
+/* background section */
+.intro{
+    height: 500px;
+    background-image: url("./images/header-bg.png");
+    background-repeat: no-repeat;
+}
+.secondSection{
+    height: 500px;
+    background-image: url("./images/biography-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.thirdSection{
+    height: 400px;
+    background-image: url("./images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+.finalSection{
+    height: 500px;
+    background-image: url("./images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+/* animation */
+
+#animation1{
+        position: relative;
+        animation-name: oheeImage1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-direction:reverse;
+        /* animation-iteration-count: infinite; */
+
+}
+
+#animation2{
+    position: relative;
+    animation-name: Ohee;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-direction: forwards;
+}
+@keyframes oheeImage1 {
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes Ohee{
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}

@@ -17,7 +17,40 @@ h1{
 .highLight{
     color: cadetblue;
     font-weight: 900;
+    position: relative;
 }
+
+.highLight::after{
+    content: "";
+    position:absolute;
+    /* background-color: #F6F8FD; */
+    background-color: white;
+    left: -10%;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid cadetblue;
+    animation-delay: 2s;
+    animation: textAnimation 4s steps(35) infinite;
+}
+
+@keyframes textAnimation {
+    0%{
+        left: calc(0px);
+    }
+    25%{
+        left: calc(200px);
+    }
+    50%{
+        left: calc(300px);
+    }
+    75%{
+        left: calc(400px);
+    }
+    100%{
+        left: calc(520px);
+    }
+}
+
 p{
     font-weight: 900;
 }
@@ -51,6 +84,7 @@ p{
 .work{
     margin-left: 5%;
     width: 25%;
+    box-shadow: 5px 5px 10px gray;
 }
 .work:hover{
     box-shadow: 20px 30px 40px gray;
@@ -76,18 +110,36 @@ p{
     padding: 5px;
     border-radius: 15px;
 }
+
+.mailAddress:hover{
+    color: rgb(207, 39, 67);
+}
+.mail:hover{
+    text-align: center;
+    background-color: white;
+    border-color: rgb(207, 39, 67) ;
+    color: rgb(207, 39, 67);
+    margin: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px gray;
+}
 a{
     text-decoration: none;
     color: white;
 }
 .footer{
+    margin: 0%;
+    padding: 0%;
     text-align: center;
     font-size: 17px;
 }
 /* background section */
 .intro{
     height: 500px;
-    background-image: url("./images/header-bg.png");
+    /* background-image: url("./images/header-bg.png"); */
     background-repeat: no-repeat;
 }
 .secondSection{
@@ -103,7 +155,7 @@ a{
     background-position: cover;
 }
 .finalSection{
-    height: 500px;
+    height: 400px;
     background-image: url("./images/footer-bg.png");
     background-repeat: no-repeat;
     background-position: cover;
